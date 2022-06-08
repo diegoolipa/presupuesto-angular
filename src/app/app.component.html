@@ -1,0 +1,15 @@
+
+<app-cabecera
+[presupuestoTotal]="getPresupuesTotal()"
+[ingresoToral]="getIngresoTotal()"
+[egresoTotal]="getEgresoTotal()"
+[procentajeTotal]="getPorcentajeTotal()"
+></app-cabecera>
+<app-formulario></app-formulario>
+<div class="contenedor limpiarEstilos">
+    <app-ingreso></app-ingreso>
+    <app-egreso
+    [ingresoTotal]="getIngresoTotal()"
+    ></app-egreso>
+</div>
+
